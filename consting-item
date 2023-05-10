@@ -1,0 +1,9 @@
+const zksync = require('zksync-web3');
+const ethers = require('ethers');
+const { Contract, BigNumber } = require('ethers');
+const SyncSwapRouter = require('./SyncSwapRouter.json');
+const SyncSwapClassicPoolFactory = require('./SyncSwapClassicPoolFactory.json');
+const approve = require('./apprvoe.json')
+// Currently, only one environment is supported.
+const zkSyncProvider = new zksync.Provider("https://testnet.era.zksync.dev");
+const ethProvider = ethers.getDefaultProvider("goerli");
